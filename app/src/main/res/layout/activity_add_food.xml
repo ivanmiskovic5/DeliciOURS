@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:addStatesFromChildren="false"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/unos"
+    tools:context=".AddFoodActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E2ECDCDC"
+            android:fadeScrollbars="true"
+            android:orientation="vertical"
+            android:padding="30dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <Button
+                android:id="@+id/selectImageBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Odaberi sliku" />
+
+            <Button
+                android:id="@+id/uploadImageBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Učitaj sliku" />
+
+            <ImageView
+                android:id="@+id/imagePreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@tools:sample/avatars" />
+
+            <EditText
+                android:id="@+id/foodTitleEdTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Unesite naslov jela"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/foodingredientsEdTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Unesite sastojke jela"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/foodScoreEdTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Unesite ocjenu jela"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/foodYearEdTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Unesite godinu objave jela"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/foodReceptEdTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Unesite recept jela"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/savefoodBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spasi" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

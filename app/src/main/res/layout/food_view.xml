@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="20dp"
+    android:scrollbars="vertical"
+    app:cardElevation="10px"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        android:background="#E8FFFFFF"
+        android:padding="0dp">
+
+        <TextView
+            android:id="@+id/foodTitleTxt"
+            android:layout_width="206dp"
+            android:layout_height="33dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="48dp"
+            android:shadowColor="#000000"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/foodingredientsTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/foodImage" />
+
+        <ImageView
+            android:id="@+id/foodImage"
+            android:layout_width="391dp"
+            android:layout_height="191dp"
+            app:layout_constraintBottom_toTopOf="@+id/foodTitleTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/foodingredientsTxt"
+            android:layout_width="372dp"
+            android:layout_height="26dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="19dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/foodReceptTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/foodTitleTxt" />
+
+        <TextView
+            android:id="@+id/foodReceptTxt"
+            android:layout_width="373dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="TextView"
+            android:inputType="textMultiLine|text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/foodingredientsTxt" />
+
+        <TextView
+            android:id="@+id/foodScoreTxt"
+            android:layout_width="60dp"
+            android:layout_height="16dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/foodingredientsTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/foodImage" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/foodingredientsTxt"
+            app:layout_constraintEnd_toStartOf="@+id/foodScoreTxt"
+            app:layout_constraintStart_toEndOf="@+id/foodTitleTxt"
+            app:layout_constraintTop_toBottomOf="@+id/foodImage"
+            app:layout_constraintVertical_bias="0.437"
+            app:srcCompat="@android:drawable/star_big_on" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
