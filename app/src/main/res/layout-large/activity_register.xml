@@ -59,10 +59,10 @@
         android:layout_marginStart="85dp"
         android:layout_marginTop="120dp"
         android:layout_marginEnd="85dp"
+        android:layout_marginBottom="15dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/deliciours" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/lib/my_package_name"
     xmlns:app2="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="10dp"
     android:layout_marginTop="10dp"
     android:layout_marginBottom="20dp"
     android:scrollbars="vertical"
-    app:cardElevation="10px">
+    app:cardElevation="10px"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="372dp"
-        android:layout_height="wrap_content"
-        android:background="#94FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        android:background="#E8FFFFFF"
         android:padding="0dp">
 
         <TextView
             android:id="@+id/foodTitleTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="12dp"
             android:shadowColor="#000000"
             android:text="TextView"
             android:textColor="#000000"
@@ -30,7 +32,6 @@
             android:textColorLink="#000000"
             android:textSize="24sp"
             android:textStyle="bold"
-            app2:layout_constraintBottom_toTopOf="@+id/foodingredientsTxt"
             app2:layout_constraintEnd_toEndOf="parent"
             app2:layout_constraintStart_toStartOf="parent"
             app2:layout_constraintTop_toBottomOf="@+id/foodImage"
@@ -42,13 +43,10 @@
 
         <ImageView
             android:id="@+id/foodImage"
-            android:layout_width="171dp"
-            android:layout_height="169dp"
-            android:layout_marginTop="12dp"
+            android:layout_width="264dp"
+            android:layout_height="151dp"
             app2:layout_constraintEnd_toEndOf="parent"
-            app2:layout_constraintHorizontal_bias="0.505"
             app2:layout_constraintStart_toStartOf="parent"
-            app2:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/foodTitleTxt"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -58,25 +56,28 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteY="32dp"
             tools:src="@tools:sample/backgrounds/scenic" />
 
         <TextView
             android:id="@+id/foodingredientsTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
             android:text="TextView"
+            app2:layout_constraintBottom_toTopOf="@+id/foodReceptTxt"
             app2:layout_constraintEnd_toEndOf="parent"
             app2:layout_constraintStart_toStartOf="parent"
+            app2:layout_constraintTop_toBottomOf="@+id/foodTitleTxt"
             app:layout_constraintBottom_toTopOf="@+id/foodReceptTxt"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/foodTitleTxt"
-            tools:layout_editor_absoluteY="218dp" />
+            app:layout_constraintTop_toBottomOf="@+id/foodTitleTxt" />
 
         <TextView
             android:id="@+id/foodReceptTxt"
-            android:layout_width="187dp"
-            android:layout_height="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="start|top"
             android:hint="TextView"
@@ -88,7 +89,7 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/foodingredientsTxt"
-            tools:layout_editor_absoluteY="238dp" />
+            tools:layout_editor_absoluteY="308dp" />
 
         <TextView
             android:id="@+id/foodScoreTxt"
@@ -101,20 +102,24 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toBottomOf="@+id/foodImage"
-            tools:layout_editor_absoluteY="190dp" />
+            tools:layout_editor_absoluteY="208dp" />
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="24dp"
-            android:layout_height="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app2:layout_constraintBottom_toTopOf="@+id/foodingredientsTxt"
             app2:layout_constraintStart_toEndOf="@+id/foodTitleTxt"
+            app2:layout_constraintTop_toBottomOf="@+id/foodImage"
+            app2:layout_constraintVertical_bias="0.081"
             app:layout_constraintBottom_toTopOf="@+id/foodingredientsTxt"
             app:layout_constraintEnd_toStartOf="@+id/foodScoreTxt"
             app:layout_constraintStart_toEndOf="@+id/foodTitleTxt"
             app:layout_constraintTop_toBottomOf="@+id/foodImage"
             app:layout_constraintVertical_bias="0.437"
             app:src="@android:drawable/star_big_on"
-            tools:layout_editor_absoluteY="185dp"
             tools:src="@android:drawable/btn_star_big_on" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

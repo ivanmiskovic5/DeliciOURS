@@ -11,8 +11,8 @@
         android:id="@+id/openAddfoodBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="260dp"
-        android:layout_marginBottom="224dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="#FFFFFF"
         android:clickable="true"
         android:scrollbarAlwaysDrawHorizontalTrack="true"
@@ -25,10 +25,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/foodsListView"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="621dp"
+        android:scrollbars="vertical"
         app:layout_constraintBottom_toTopOf="@+id/openAddfoodBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
